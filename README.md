@@ -13,6 +13,21 @@ $ yarn install
 $ yarn dev
 ```
 
+**使用 Docker 构建和运行**
+
+构建 Docker 镜像：
+
+```bash
+$ docker build -t deep-agents-ui:2025.12.26 .
+```
+
+启动 Docker 容器：
+
+```bash
+$ docker run -itd -p 3002:3000 --name deep-agents-ui -d deep-agents-ui:2025.12.26
+```
+
+
 **Deploy a deepagent**
 
 As an example, see our [deepagents quickstart](https://github.com/langchain-ai/deepagents-quickstarts/tree/main/deep_research) repo for an example and run the `deep_research` example.
